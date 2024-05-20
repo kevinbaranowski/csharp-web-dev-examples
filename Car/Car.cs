@@ -40,6 +40,14 @@ namespace Car
             GasTankLevel -= gallonsUsed;
             Odometer += milesAbleToTravel;
         }
+        public void AddGas(double gallonsToAdd)
+        {
+            GasTankLevel += gallonsToAdd;
+            if (GasTankLevel > GasTankSize)
+            {
+                throw new ArgumentOutOfRangeException("Can't exceed tank size");
+            }
+        }
     }
 }
 

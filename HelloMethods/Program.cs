@@ -1,3 +1,4 @@
-﻿string message = Message.GetMessage("fr");
+﻿
+string message = Message.GetMessage("fr");
 Console.WriteLine(message);
 Console.ReadLine();
